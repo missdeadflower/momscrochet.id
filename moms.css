@@ -1,0 +1,132 @@
+* { 
+    box-sizing: border-box;
+    background-color: #f7e4de;
+}
+
+body { font-family: 'Alfa Slab One'}
+img {vertical-align: middle;}
+
+
+.navbar { 
+    background-color: #f7e4de;
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    padding: 14px 16px;
+    color:#6d2a16;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar a:hover {
+    background-color: #b05c43;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }
+
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev:hover, .next:hover {
+    background-color: #b05c43;
+  }
+
+  .text {
+    color: #b05c43;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .numbertext {
+    color: #b05c43;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #b05c43;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .on, .dot:hover {
+    background-color: #6d2a16;
+  }
+
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+
+p { 
+    text-align: center;
+    color: #6d2a16;
+    font-size: 20px;
+    margin: 45px;
+}
+
+.wikipedia {
+    color:#b05c43;
+}
+
+.wikipedia:hover {
+    background-color: #6d2a16;
+}
+
+footer { 
+    color: #6d2a16;
+    text-align: end;
+    font-size: 10px;
+}
